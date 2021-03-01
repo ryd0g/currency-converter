@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Playing Cards</title>
+    <title>Currency Converter</title>
     <style>
       body,
       html {
@@ -24,18 +24,32 @@
   </head>
   <body>
     <div class="container">
-        <!-- display -->
-      </p>
-      <form id="form">
-        <input
-          id="hilow"
-          type="text"
-          placeholder="Hi or Low"
-          title="Enter 1 for Hi and 2 for Low"
-          pattern="^\d{5}(?:[-\s]\d{4})?$"
-        />
-        <button type="submit">Play</button>
-      </form>
+      <div class="currency">
+        <select id="currency_from">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="CAD">CAD</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="CNY">CNY</option>
+        </select>
+        <input type="number" id="from" placeholder="0" />
+      </div>
+      <div class="convert">
+        <button id="exchange"></button>
+        <div class="rate" id="rate"></div>
+      </div>
+      <div class="currency">
+        <select id="currency_to">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="CAD">CAD</option>
+          <option value="JPY">JPY</option>
+          <option value="KRW">KRW</option>
+          <option value="CNY">CNY</option>
+        </select>
+        <input type="number" id="to" placeholder="0" />
+      </div>
     </div>
-  </body>
+    <script src="index.js"></script>
 </html>
