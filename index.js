@@ -24,7 +24,7 @@ function convert() {
   fetch(`https://api.exchangerate-api.com/v4/latest/${from_cr}`)
     .then((res) => res.json())
     .then((res) => {
-      const rate = res.rates[to_currency];
+      const rate = res.rates[to_cr];
       rateEl.innerText = `1 ${from_cr} = ${rate} ${to_cr}`;
       amount_toEl.value = (amount_fromEl.value * rate).toFixed(2);
     });
