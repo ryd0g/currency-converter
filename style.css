@@ -56,10 +56,9 @@ body {
   justify-content: center;
   height: 40px;
   width: 40px;
-  transform: rotate(90deg);
 }
 .convert button:active {
-  transform: rotate(90deg) scale(0.9);
+  transform: scale(0.9);
 }
 .convert .rate {
   background-color: #fff;
