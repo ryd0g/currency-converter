@@ -1,0 +1,19 @@
+{
+  "name": "ryanlee-currency-converter",
+  "version": "1.0.0",
+  "description": "simple currency conversion calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryd0g/final-project.git"
+  },
+  "author": "ryd0g",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryd0g/final-project/issues"
+  },
+  "homepage": "https://github.com/ryd0g/final-project#readme"
+}
