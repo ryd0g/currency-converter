@@ -17,6 +17,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 500px;
+  height: 75px;
+  margin-right: 50%;
+  margin-left: 25%;
+}
+.from {
+  border: 4px black;
 }
 .currency select {
   background: transparent;
@@ -31,7 +38,7 @@ body {
   appearance: none;
 }
 .currency input {
-  border: 0;
+  border: thin black;
   width: 200px;
   background: transparent;
   font-size: 22px;
@@ -42,6 +49,10 @@ body {
   color: black;
   display: flex;
   align-items: center;
+  height: 75px;
+  width: 525px;
+  margin-right: 50%;
+  margin-left: 25%;
   justify-content: space-between;
 }
 .convert button {
@@ -76,4 +87,94 @@ select:focus,
 input:focus,
 button:focus {
   outline: 0;
+}
+.header-primary-nav {
+  height: 60px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 249, 251);
+  box-shadow: 0 1px 5px;
+}
+
+.header-primary-nav-left {
+  flex-grow: 0;
+  white-space: nowrap;
+}
+
+.header-primary-nav-left #logo {
+  padding: 8px 16px 0 16px;
+  padding-top: 12px;
+}
+
+.header-primary-nav-center {
+  opacity: 1;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  box-sizing: inherit;
+  max-width: 70vw;
+}
+
+.header-primary-nav-center .container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  position: relative;
+}
+
+.header-primary-nav-center input {
+  flex-grow: 1;
+  height: 36px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  max-width: 80vw;
+  background-color: rgb(236, 229, 240);
+  border: 1px solid transparent;
+  padding: 12px;
+  border-radius: 5px 0px 0px 5px;
+  line-height: normal;
+}
+
+.header-primary-nav-center button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0px 5px 5px 0px;
+  font-weight: 600;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-size: 16px;
+  height: 36px;
+  background-color: black;
+  color: white;
+  width: 50px;
+}
+
+#logo {
+  color: black;
+}
+
+#footer {
+  position: absolute;
+  background-color: rgb(255, 249, 251);
+  height: 100px;
+  width: 100%;
+  margin-top: 41%;
+  box-shadow: 0 1px 5px;
+}
+img {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+h3 {
+  padding-top: 10px;
+}
+a {
+  font-size: 20px;
 }
